@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1572177797 source:e:\课程\编译原理\实验\实验三-201708030212-梁靖坤\exp3_trans\main.cpp
+	<bits/stdc++.h>
+	"dfa.h"
+
+1572176269 e:\课程\编译原理\实验\实验三-201708030212-梁靖坤\exp3_trans\dfa.h
+	<bits/stdc++.h>
+
+1572177784 source:e:\课程\编译原理\实验\实验三-201708030212-梁靖坤\exp3_trans\dfa.cpp
+	<bits/stdc++.h>
+	"dfa.h"
+
