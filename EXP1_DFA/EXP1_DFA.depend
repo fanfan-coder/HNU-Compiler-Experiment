@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1570965617 source:e:\codes\课程\编译原理\实验\exp1_dfa\dfa.cpp
+	<bits/stdc++.h>
+	"dfa.h"
+
+1570965754 e:\codes\课程\编译原理\实验\exp1_dfa\dfa.h
+	<bits/stdc++.h>
+
+1570965856 source:e:\codes\课程\编译原理\实验\exp1_dfa\main.cpp
+	<bits/stdc++.h>
+	"dfa.h"
+
+1570967786 source:e:\codes\课程\编译原理\实验\实验一\exp1_dfa\dfa.cpp
+	<bits/stdc++.h>
+	"dfa.h"
+
+1571499254 e:\codes\课程\编译原理\实验\实验一\exp1_dfa\dfa.h
+	<bits/stdc++.h>
+
