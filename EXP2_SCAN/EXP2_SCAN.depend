@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1571577040 source:e:\codes\课程\编译原理\实验\实验二\exp2_scan\main.cpp
+	<bits/stdc++.h>
+	"scan.h"
+
+1571465960 source:e:\codes\课程\编译原理\实验\实验二\exp2_scan\myscan.c
+	"globals.h"
+	"scan.h"
+
+1571466096 e:\codes\课程\编译原理\实验\实验二\exp2_scan\globals.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
+1571577065 e:\codes\课程\编译原理\实验\实验二\exp2_scan\scan.h
+	<bits/stdc++.h>
+
+1571577030 source:e:\codes\课程\编译原理\实验\实验二\exp2_scan\myscan.cpp
+	<bits/stdc++.h>
+	"scan.h"
+
+1571577537 source:e:\课程\编译原理\实验\实验二-201708030212-梁靖坤\exp2_scan\myscan.cpp
+	<bits/stdc++.h>
+	"scan.h"
+
+1571577065 e:\课程\编译原理\实验\实验二-201708030212-梁靖坤\exp2_scan\scan.h
+	<bits/stdc++.h>
+
