@@ -1,0 +1,27 @@
+/* Sample program
+   in CMinus language -
+   computes factorial
+*/
+
+int fact(int n)
+{
+    int ret;
+    if(x < 0) 
+        ret = 0;
+    else 
+        ret = 1;
+        
+    while(n != 0)
+    {
+        ret = ret * n;
+        n = n - 1;
+    }
+    return ret;
+}
+
+void main(void)
+{
+    int x;
+    x = input();
+    output(fact(x));
+}
