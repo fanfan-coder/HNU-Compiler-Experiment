@@ -1,0 +1,119 @@
+34
+program -> stmt-sequence
+stmt-sequence -> statement stmt'
+stmt' -> ;statement stmt'
+stmt' -> $
+statement -> if-stmt
+statement -> repeat-stmt
+statement -> assign-stmt
+statement -> read-stmt
+statement -> write-stmt
+if-stmt -> if exp then stmt-sequence else-part' end
+else-part' -> else stmt-sequence
+else-part' -> $
+repeat-stmt -> repeat stmt-sequence until exp
+assign-stmt -> identifier := exp
+read-stmt -> read identifier
+write-stmt -> write exp
+exp -> simple-exp cmp-exp'
+cmp-exp' -> comparison-op simple-exp
+cmp-exp' -> $
+comparison-op -> <
+comparison-op -> =
+simple-exp -> term term'
+term' -> addop term
+term' -> $
+addop -> +
+addop -> -
+term -> factor factor'
+factor' -> mulop factor
+factor' -> $
+mulop -> *
+mulop -> /
+factor -> (exp)
+factor -> number
+factor -> identifier
+
+
+21
+ENDFILE
+IF
+THEN
+ELSE
+END
+REPEAT
+UNTIL
+READ
+WRITE
+ID
+NUM
+ASSIGN
+EQ
+LT
+PLUS
+MINUS
+TIMES
+OVER
+LPAREN
+RPAREN
+SEMI
+
+
+20
+program
+stmt-sequence
+stmt'
+statement
+if-stmt
+else-part'
+repeat-stmt
+assign-stmt
+read-stmt
+write-stmt
+exp
+cmp-exp'
+comparison-op
+simple-exp
+term'
+addop
+term
+factor'
+mulop
+factor
+
+
+
+0 1 stmt-sequence 5 IF REPEAT ID READ WRITE
+1 2 statement stmt' 5 IF REPEAT ID READ WRITE
+2 3 SEMI statement stmt' 1 SEMI
+2 1 $ 4 ENDFILE ELSE END UNTIL
+3 1 if-stmt 1 IF
+3 1 repeat-stmt 1 REPEAT
+3 1 assign-stmt 1 ID
+3 1 read-stmt 1 READ
+3 1 write-stmt 1 WRITE
+4 6 IF exp THEN stmt-sequence else-part' END 1 IF
+5 2 ELSE stmt-sequence 1 ELSE
+5 1 $ 1 END
+6 4 REPEAT stmt-sequence UNTIL exp 1 REPEAT
+7 3 ID ASSIGN exp 1 ID
+8 2 READ ID 1 READ
+9 2 WRITE exp 1 WRITE
+10 2 simple-exp cmp-exp' 3 LPAREN NUM ID
+11 2 comparison-op simple-exp 2 LT EQ
+11 1 $ 7 THEN SEMI ENDFILE RPAREN ELSE END UNTIL
+12 1 LT 1 LT
+12 1 EQ 1 EQ
+13 2 term term' 3 LPAREN NUM ID
+14 2 addop term 2 PLUS MINUS
+14 1 $ 9 LT EQ THEN SEMI ENDFILE RPAREN ELSE END UNTIL
+15 1 PLUS 1 PLUS
+15 1 MINUS 1 MINUS
+16 2 factor factor' 3 LPAREN NUM ID
+17 2 mulop factor 2 TIMES OVER
+17 1 $ 11 PLUS MINUS LT EQ THEN SEMI ENDFILE RPAREN ELSE END UNTIL
+18 1 TIMES 1 TIMES
+18 1 OVER 1 OVER
+19 3 LPAREN exp RPAREN 1 LPAREN
+19 1 NUM 1 NUM
+19 1 ID 1 ID

@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1572945708 source:e:\课程\编译原理\实验\实验四-201708030212-梁靖坤\exp4_parse\myscan.cpp
+	<bits/stdc++.h>
+	"scan.h"
+
+1572941712 e:\课程\编译原理\实验\实验四-201708030212-梁靖坤\exp4_parse\scan.h
+	<bits/stdc++.h>
+
+1574524754 source:e:\课程\编译原理\实验\实验四-201708030212-梁靖坤\exp4_parse\main.cpp
+	<bits/stdc++.h>
+	"parse.h"
+
+1574528011 e:\课程\编译原理\实验\实验四-201708030212-梁靖坤\exp4_parse\parse.h
+	<bits/stdc++.h>
+	"SCAN.H"
+
+1574524129 source:e:\课程\编译原理\实验\实验四-201708030212-梁靖坤\exp4_parse\myparse.cpp
+	<bits/stdc++.h>
+	"PARSE.h"
+
