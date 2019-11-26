@@ -1,0 +1,46 @@
+# Project: lab6
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Analyse.o CGen.o Main.o Parse.o Scan.o SymTab.o Util.o
+LINKOBJ  = Analyse.o CGen.o Main.o Parse.o Scan.o SymTab.o Util.o
+LIBS     = -L"D:/Dev-Cpp/MinGW64/lib" -L"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = lab6.exe
+CXXFLAGS = $(CXXINCS) -std=c++11 -Wno-write-strings -fpermissive
+CFLAGS   = $(INCS) -std=c++11 -Wno-write-strings -fpermissive
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Analyse.o: Analyse.c
+	$(CPP) -c Analyse.c -o Analyse.o $(CXXFLAGS)
+
+CGen.o: CGen.c
+	$(CPP) -c CGen.c -o CGen.o $(CXXFLAGS)
+
+Main.o: Main.c
+	$(CPP) -c Main.c -o Main.o $(CXXFLAGS)
+
+Parse.o: Parse.c
+	$(CPP) -c Parse.c -o Parse.o $(CXXFLAGS)
+
+Scan.o: Scan.c
+	$(CPP) -c Scan.c -o Scan.o $(CXXFLAGS)
+
+SymTab.o: SymTab.c
+	$(CPP) -c SymTab.c -o SymTab.o $(CXXFLAGS)
+
+Util.o: Util.c
+	$(CPP) -c Util.c -o Util.o $(CXXFLAGS)

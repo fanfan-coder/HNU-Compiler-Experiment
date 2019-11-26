@@ -1,0 +1,16 @@
+{ Test program
+  in TINY language -
+  gcd & lcm
+}
+
+read x;
+read y;
+a := (x = y);
+b := y;
+repeat
+    r := b;
+    b := a - (a/b)*b;
+    a := r
+until b = 0;
+write a;
+write (y/a*x)

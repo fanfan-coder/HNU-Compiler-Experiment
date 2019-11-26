@@ -1,0 +1,15 @@
+/* test */
+int gcd (int u, int v)
+{
+	void x; int y;
+	{ int u; u=v+1; x=v*(u); }
+	if (v = 0) return u>y ;
+	else return gcd(v,u-u/v*v);
+}
+void main(void)
+{ 	
+	int x; int y; int b[10]; {int a;}
+	x = input(); y = input();
+	output(gcd(x,y));
+	return ;
+}
